@@ -5,6 +5,10 @@ import tailwindcss from '@tailwindcss/postcss'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/BIO-100_Project/',
+  build: {
+    outDir: 'docs',
+  },
   css: {
     postcss: {
       plugins: [tailwindcss],
